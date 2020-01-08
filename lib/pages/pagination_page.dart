@@ -16,11 +16,16 @@ class _PaginationPageState extends State<PaginationPage> {
       ),
       body: Column(
         children: <Widget>[
-          Expanded(
-            child: Image.asset(
-              'assets/lake.jpg',
-              fit: BoxFit.cover,
-            ),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Image.asset(
+                  'assets/lake.jpg',
+                  fit: BoxFit.cover,
+                  height: 250,
+                ),
+              ),
+            ],
           ),
           Container(
             padding: const EdgeInsets.all(32),
@@ -55,6 +60,64 @@ class _PaginationPageState extends State<PaginationPage> {
                   color: Colors.red[500],
                 ),
                 Text('41'),
+              ],
+            ),
+          ),
+          Container(
+            child: Row(
+              children: <Widget>[
+                Spacer(),
+                Column(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.blue,
+                      size: 25,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'CALL',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                    )
+                  ],
+                ),
+                Spacer(),
+                Column(
+                  children: <Widget>[
+                    Icon(
+                      Icons.near_me,
+                      color: Colors.blue,
+                      size: 25,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'ROUTES',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                    )
+                  ],
+                ),
+                Spacer(),
+                Column(
+                  children: <Widget>[
+                    Icon(
+                      Icons.share,
+                      color: Colors.blue,
+                      size: 25,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'SHARE',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                    )
+                  ],
+                ),
+                Spacer()
               ],
             ),
           ),
